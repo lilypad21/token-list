@@ -77526,6 +77526,17 @@
       "tags": [
         "social-token"
       ]
+    },
+    {
+      "chainId": 101,
+      "address": "FT4nC3F1Nm2KwNyANcggnuiLSgeBkV7eNoZTmRZrimxJ",
+      "symbol": "UROK",
+      "name": "U Rock",
+      "decimals": 0,
+      "logoURI": "https://github.com/lilypad21/Crypto/blob/main/smiley%20crypto.png",
+      "tags": [
+        "social-token"
+      ]
     }
   ],
   "version": {
