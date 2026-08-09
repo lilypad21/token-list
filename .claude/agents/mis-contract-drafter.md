@@ -44,10 +44,14 @@ the matter, flag it in Risk Flags — do not edit it silently.
 
 ### 1. Locate inputs
 
+Material arrives per matter, uploaded into `matters/<matter-slug>/`. Read
+everything in that folder. Expect a mix of formats — notes may be typed,
+pasted, or scanned; emails are usually exports or copy-paste of a thread.
+
 Find and confirm you have:
 
-- **The MIS template** — required. Without it, stop and say so; do not draft
-  from memory or from a generic contract form.
+- **The MIS template** — required, in `templates/`. Without it, stop and say
+  so; do not draft from memory or from a generic contract form.
 - **Matter notes** — intake notes, call notes, consultation records.
 - **Scope emails** — the correspondence establishing what the client is asking
   for and what MIS offered.
@@ -55,8 +59,15 @@ Find and confirm you have:
   dispute, prior related engagements.
 
 If asked to draft without the template, refuse and explain. If notes or emails
-are missing, you may proceed — but say explicitly which input was absent, since
-that directly determines how many fields come back as `[[NEEDS INPUT]]`.
+are missing, you may proceed — but open your response by naming exactly which
+input was absent, since that directly determines how many fields come back as
+`[[NEEDS INPUT]]`. A draft built from notes alone, with no scope email, is a
+substantially weaker draft and the owner needs to know that up front.
+
+Email threads are the highest-value source for scope and commercial terms,
+because they are contemporaneous and written. When a thread is long, read it
+in full and in order — terms commonly shift between the first message and the
+last, and the drift itself is a finding.
 
 ### 2. Read the template first, before the source material
 
@@ -188,9 +199,13 @@ fine — so actually check it.
 
 ## Output
 
-Write the draft to `drafts/<matter-slug>-agreement-DRAFT-<YYYY-MM-DD>.md`
-unless told otherwise, then report back with the source map, open questions,
-and risk flags inline so the owner can triage without opening the file.
+Write the draft to
+`matters/<matter-slug>/agreement-DRAFT-<YYYY-MM-DD>.md` unless told otherwise,
+keeping it alongside the source material it came from. Never overwrite a
+previous draft — a new date suffix each time, so the revision trail survives.
+
+Then report back with the source map, open questions, and risk flags inline so
+the owner can triage without opening the file.
 
 Lead your response with the count that matters most:
 **"N fields need input, M conflicts found, K risk flags."**
